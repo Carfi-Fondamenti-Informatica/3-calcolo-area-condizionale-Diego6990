@@ -1,20 +1,22 @@
 #include <iostream>
 using namespace std;
 int main() {
-   float a,b,x,y,z;
-   cin>>a>>b>>x>>y;
-   if(x<0 && y>0)
-   {
-   z=a*x-b*y;
-   }
-   else if(x>=0 && y<=0)
-   {
-   z=a*x*x-b*y;
-   }
-   else
-   {
-   z=a*x+b*y*y;
-   }
-   cout<<z<<endl;
-   return 0;
+float a=0, b=0; cin >> a, cin >> b;
+int opzione=0; cin >> opzione;
+switch (opzione) {
+        case 0:
+            cout<<(a*b)/2;
+            break;
+        case 1:
+            cout<<a*a;
+            break;
+        case 2:
+            cout<<a*b;
+            break;
+        default:
+            cout<<"opzione non valida";
+            break;
 }
+    return 0;
+}
+
